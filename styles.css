@@ -1,0 +1,16 @@
+#input-search::placeholder {
+    color: gray;
+}
+#input-search {
+    background-color: white;
+    color: gray;
+}
+
+#contenedor-texto p {
+    text-align: justify;
+}
+
+#navbarNav a {
+    padding: none
+    ;
+}

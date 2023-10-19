@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taller Responsive Design y Bootstrap</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <!-- BARRA DE NAVEGACIÓN -->
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark"
+            style="background-color: gray">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">LOREM IPSUM</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <form class="d-flex d-lg-none" role="search">
+                        <input class="form-control me-2 mt-2" id="input-search"
+                            type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                    <ul id="navbar-ul" class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-lg-5">
+                            <a class="nav-link active" href="#">Dolor</a>
+                        </li>
+                        <li class="nav-item mx-lg-5 mx">
+                            <a class="nav-link" href="#">Sit</a>
+                        </li>
+                        <li class="nav-item mx-lg-5">
+                            <a class="nav-link" href="#">Amet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-lg-none"
+                                data-bs-toggle="collapse"
+                                href="#options-list-collapse" role="button"
+                                aria-expanded="false"
+                                aria-controls="options-list-collapse">
+                                Opciones</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex d-none d-lg-block" role="search">
+                        <input class="form-control me-2" id="input-search"
+                            type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- TÍTULO -->
+        <div class="mt-5 text-center">
+            <div>
+                <h3>Lorem ipsum...</h3>
+            </div>
+        </div>
+
+        <!-- CARRUSEL -->
+        <div id="text-carousel" class="carousel slide text-center mb-4"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="d-block w-100 h5" data-bs-interval="2000">...vestibulum
+                        mollis, tortor ac congue commmodo</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="d-block w-100 h5" data-bs-interval="2000">...vestibulum
+                        mollis, tortor ac congue commmodo</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="d-block w-100 h5" data-bs-interval="2000">...vestibulum
+                        mollis, tortor ac congue commmodo</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- LISTA DE OPCIONES -->
+        <div class="container" id="contenedor-principal">
+            <div class="row mb-2" id="primera-fila">
+                <ul class="col-lg-3 list-group d-none d-lg-block"
+                    id="options-list">
+                    <li class="list-group-item rounded py-3"><u>Opción
+                            1</u></li>
+                    <li class="list-group-item rounded py-3"><u>Opción
+                            2</u></li>
+                    <li class="list-group-item rounded py-3"><u>Opción
+                            3</u></li>
+                    <li class="list-group-item rounded py-3"><u>Opción
+                            4</u></li>
+                </ul>
+                <ul class="collapse col-lg-3 list-group mb-4 d-lg-none"
+                    id="options-list-collapse">
+                    <li class="list-group-item rounded"><u>Opción
+                            1</u></li>
+                    <li class="list-group-item rounded"><u>Opción
+                            2</u></li>
+                    <li class="list-group-item rounded"><u>Opción
+                            3</u></li>
+                    <li class="list-group-item rounded"><u>Opción
+                            4</u></li>
+                </ul>
+
+                <!-- PÁRRAFOS -->
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div
+                            class="col-lg-4 col-md-6 col-sm-12 bg-body-tertiary mb-2">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Vestibulum mollis, tortor ac congue
+                                commodo,
+                                nisi neque bibendum elit, quis vulputate dolor
+                                augue
+                                ut mauris. tincidunt.
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6 col-sm-12 bg-body-tertiary mb-2">
+                            <p>
+                                Phasellus eleifend semper tempor. Quisque mi
+                                lorem,
+                                laoreet eu uma sit amet, tempor volutpat est.
+                                Vestibulum lobortis nulla vel odio laoreet,
+                                iaculis
+                                rhoncus neque porttitor.
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6 col-sm-12 bg-body-tertiary mb-2">
+                            <p>
+                                Fusce vitae enim et tellus lacinia condimentum
+                                eu at
+                                massa. Nullam laoreet, elit quis hendrerit
+                                maximus,
+                                ante sem congue lorem, at vestibulum felis
+                                mauris et
+                                arcu.
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6 col-sm-12 bg-body-tertiary mb-2">
+                            <p>
+                                Mauris mattis porttitor erat, in pharetra risus
+                                fringilla lobortis. Vestibulum et ante commodo,
+                                imperdiet neque ac, tempus felis. Nullam sed
+                                pharetra purus. Donec sit amet ultricies nisi.
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6 col-sm-12 bg-body-tertiary mb-2">
+                            <p>
+                                In mi velit, fringilla sed velit vel, ornare
+                                varius
+                                dui. Nunc viverra diam sit amet mollis posuere.
+                                Nullam semper odio in consectetur ornare.
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6 col-sm-12 bg-body-tertiary mb-2">
+                            <p>
+                                Proin suscipit orci mi, ut hendrerit mi molestie
+                                nec. Donec efficitur risus erat, eu auctor massa
+                                molestie vitae.
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6 col-sm-12 bg-body-tertiary mb-2">
+                            <p>
+                                Orci varius natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus. Donec
+                                lectus ligula, ultricies ut est nec, varius
+                                dignissim nulla.
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-6 col-sm-12 bg-body-tertiary">
+                            <p>
+                                In aliquet fringilla libero, quis dapibus massa
+                                tincidunt a. Orci varius natoque penatibus et
+                                parturient — montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+
+    </body>
+
+</html>
